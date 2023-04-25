@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Please fill out this form with the required information
+    </p>
+    <div id="container">
+      <form
+        id="survey-form"
+        action="mailto:someone@example.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <fieldset>
+          <label id="name-label"
+            >Enter Your Name:
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Name"
+              autofocus
+              required
+          /></label>
+          <label id="email-label"
+            >Enter Your Email:
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+          /></label>
+          <label id="number-label"
+            >Enter Your Age (years):
+            <input
+              id="number"
+              type="number"
+              name="age"
+              min="10"
+              max="120"
+              placeholder="Age"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label
+            >How did you hear about us?
+            <select id="dropdown" name="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Social media</option>
+              <option value="2">Advertising</option>
+              <option value="3">Promo</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <label class="spaced-label">Would you recommend us?</label>
+          <label
+            ><input
+              type="radio"
+              value="radioItem-1"
+              class="inline"
+              name="radioItems"
+              checked
+            />
+            Yes</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="radioItem-1"
+              class="inline"
+              name="radioItems"
+            />
+            No</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="radioItem-1"
+              class="inline"
+              name="radioItems"
+            />
+            Not sure</label
+          >
+          <label class="spaced-label">Choose your favorite option:</label>
+          <label
+            ><input
+              type="checkbox"
+              value="checkboxItem-1"
+              class="inline"
+              name="checkboxItems"
+              checked
+            />
+            Checkbox Item 1</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="checkboxItem-2"
+              class="inline"
+              name="checkboxItems"
+            />
+            Checkbox Item 2</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="checkboxItem-3"
+              class="inline"
+              name="checkboxItems"
+            />
+            Checkbox Item 3</label
+          >
+        </fieldset>
+        <fieldset>
+          <label
+            >Additional comments:
+            <textarea
+              name="comments"
+              rows="3"
+              cols="30"
+              placeholder="Additional comments..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
